@@ -1,0 +1,126 @@
+@media screen and (max-width: 767px){
+	#admin_menu > .nav-pills > li, #adm_submenus > .nav-pills > li
+	{
+		float: none !important;
+		width: 100%;
+		margin: 0 0 10px !important;
+	}
+	#admin_menu > .nav-pills li > ul, #adm_submenus > .nav-pills li > ul
+	{
+		width: 100% !important;
+	}
+	#admin_menu > .nav-pills li ul > li, #admin_menu > .nav-pills li ul > li a,
+	#adm_submenus > .nav-pills li ul > li, #adm_submenus > .nav-pills li ul > li a
+	{
+		height: auto !important;
+		width: 100%;
+		white-space: normal !important;
+	}
+	#adm_submenus
+	{
+		padding-left: 0 !important;
+	}
+	.login
+	{
+		width: auto !important;
+	}
+	dl
+	{
+		overflow: hidden !important;
+	}
+	#basicinfo, #detailedinfo, .modblock_left, .modblock_right, #live_news, #supportVersionsTable
+	{
+		width: 100% !important;
+		float: none;
+		margin: 0 0 3px;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+	#topbar .greeting
+	{
+		display: none;
+	}
+	#topbar .userarea
+	{
+		float: left;
+		width: 100%;
+	}
+	#topbar .userarea .dropdown-menu
+	{
+		width: 100%;		
+	}
+}
+@media (max-width:991px) {
+	ol.breadcrumb li
+	{
+		display: none;
+	}
+	ol.breadcrumb li:first-child, .breadcrumb li:last-child
+	{
+		display: inline-block;
+	}
+	#detailedinfo, #basicinfo
+	{
+		width: 100%;
+	}
+	#detailedinfo
+	{
+		padding-left: 0;
+	}
+	#basicinfo
+	{
+		text-align: center;
+	}
+	#basicinfo ul li
+	{
+		float: none !important;
+		display: inline-block;
+		
+	}
+}
+@media screen and (min-width: 768px) {
+	.dropdown-submenu {
+	    position: relative;
+	}
+	.dropdown-submenu>.dropdown-menu {
+	    top: 0;
+	    left: 100%;
+	    margin-top: -6px;
+	    margin-left: -1px;
+	    -webkit-border-radius: 0 6px 6px 6px;
+	    -moz-border-radius: 0 6px 6px;
+	    border-radius: 0 6px 6px 6px;
+	}
+
+	.dropdown-submenu:hover>.dropdown-menu {
+	    display: block;
+	}
+
+	.dropdown-submenu>a:after {
+	    display: block;
+	    content: " ";
+	    float: right;
+	    width: 0;
+	    height: 0;
+	    border-color: transparent;
+	    border-style: solid;
+	    border-width: 5px 0 5px 5px;
+	    border-left-color: #e9b462;
+	    margin-top: 5px;
+	    margin-right: -8px;
+	}
+
+
+
+	.dropdown-submenu.pull-left {
+	    float: none;
+	}
+
+	.dropdown-submenu.pull-left>.dropdown-menu {
+	    left: -100%;
+	    margin-left: 10px;
+	    -webkit-border-radius: 6px 0 6px 6px;
+	    -moz-border-radius: 6px 0 6px 6px;
+	    border-radius: 6px 0 6px 6px;
+	}
+}
