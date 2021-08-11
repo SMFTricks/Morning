@@ -412,7 +412,7 @@ function template_main()
 				if ($message['can_approve'] || $context['can_reply'] || $message['can_modify'] || $message['can_remove'] || $context['can_split'] || $context['can_restore_msg'])
 					echo '				
 										<div class="btn-group navbar-right">
-											<button type="button" class="btn btn-morning dropdown-toggle btn-sm" data-toggle="dropdown">Actions <span class="caret"></span></button>
+											<button type="button" class="btn btn-morning dropdown-toggle btn-sm" data-toggle="dropdown">', $txt['st_actions']. ' <span class="caret"></span></button>
 											<ul class="dropdown-menu animated bounceIn" role="menu"">'; 
 
 					// Maybe we can approve it, maybe we should?
