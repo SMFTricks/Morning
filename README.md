@@ -2,7 +2,7 @@
     <img src="https://smftricks.com/logos/logo.png">
  </p>
   <p align="center">
-    <img src="https://custom.simplemachines.org/themes/index.php?action=download;lemma=2872;id=17881;image">
+    <img src="https://custom.simplemachines.org/index.php?action=download;theme=2872;attach=251151;image">
  </p>
  
 ## Morning
