@@ -128,7 +128,7 @@ function template_generic_menu_dropdown_above()
 	{
 		echo '
 			<li role="presentation" class="dropdown', ($section['id'] == $menu_context['current_section'] ? ' active' : ''), '"><a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">', $section['title'] , '</a>
-				<ul class="dropdown-menu animated bounceIn">';
+				<ul class="dropdown-menu animate__animated animate__bounceIn">';
 
 		// For every area of this section show a link to that area (bold if it's currently selected.)
 		$additional_items = 0;

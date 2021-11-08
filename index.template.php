@@ -207,7 +207,7 @@ function template_body_above()
 								', $context['user']['name'], '
 						<span class="caret"></span>
 					  </a>
-					  <ul class="dropdown-menu animated bounceIn" aria-labelledby="dropdownMenu1">';
+					  <ul class="dropdown-menu animate__animated animate__bounceIn" aria-labelledby="dropdownMenu1">';
 						if(!empty($context['user']['is_logged']))
 						{
 							echo'
@@ -362,7 +362,7 @@ function template_menu()
 		if (!empty($button['sub_buttons']))
 		{
 			echo '
-					<ul class="dropdown-menu animated bounceIn">
+					<ul class="dropdown-menu animate__animated animate__bounceIn">
 						<li>
 							<a href="', $button['href'], '"', isset($button['target']) ? ' target="' . $button['target'] . '"' : '', '>', $button['title'], '</a>
 						</li>';
@@ -378,7 +378,7 @@ function template_menu()
 				if (!empty($childbutton['sub_buttons']))
 				{
 					echo '
-							<ul class="dropdown-menu animated bounceIn">';
+							<ul class="dropdown-menu animate__animated animate__bounceIn">';
 
 					foreach ($childbutton['sub_buttons'] as $grandchildbutton)
 						echo '

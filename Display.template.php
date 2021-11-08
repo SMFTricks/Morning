@@ -413,7 +413,7 @@ function template_main()
 					echo '				
 										<div class="btn-group navbar-right">
 											<button type="button" class="btn btn-morning dropdown-toggle btn-sm" data-toggle="dropdown">', $txt['st_actions']. ' <span class="caret"></span></button>
-											<ul class="dropdown-menu animated bounceIn" role="menu"">'; 
+											<ul class="dropdown-menu animate__animated animate__bounceIn" role="menu"">'; 
 
 					// Maybe we can approve it, maybe we should?
 					if ($message['can_approve'])
