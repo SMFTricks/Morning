@@ -101,13 +101,12 @@ function template_html_above()
 	// The ?fin20 part of this link is just here to make sure browsers don't cache it wrongly.
 	echo '
 	<link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/bootstrap.min.css?fin20" />
-	<link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/font-awesome.min.css?fin20" />
-	<link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/animate.css?fin20" />
+	<link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+	<link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/animate.min.css" />
 	<link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/index', $context['theme_variant'], '.css?fin20" />
 	<link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/theme.css?fin20" />
 	<link rel="stylesheet" type="text/css" href="', $settings['theme_url'], '/css/responsive.css?fin20" />';
-	
-	
+
 	// Some browsers need an extra stylesheet due to bugs/compatibility issues.
 	foreach (array('ie7', 'ie6', 'webkit') as $cssfix)
 		if ($context['browser']['is_' . $cssfix])
@@ -121,8 +120,7 @@ function template_html_above()
 	
 	// Here comes the JavaScript bits!
 	echo '
-	
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script type="text/javascript" src="', $settings['theme_url'], '/scripts/bootstrap.min.js?fin20"></script>
 	<script type="text/javascript" src="', $settings['default_theme_url'], '/scripts/script.js?fin20"></script>
 	<script type="text/javascript" src="', $settings['theme_url'], '/scripts/theme.js?fin20"></script>
@@ -216,7 +214,7 @@ function template_body_above()
 							<li><a href="', $scripturl, '?action=profile"><i class="fa fa-profile"></i> ', $txt['profile'], '</a></li>
 							<li><a href="', $scripturl, '?action=profile;area=forumprofile"><i class="fa fa-moderate"></i> ', $txt['forumprofile'], '</a></li>
 							<li><a href="', $scripturl, '?action=profile;area=account"><i class="fa fa-cog"></i> ', $txt['account'], '</a></li>
-							<li><a href="', $scripturl, '?action=logout;sesc=', $context['session_id'], '"><i class="fa fa-sign-out"></i> ', $txt['logout'], '</a></li>';
+							<li><a href="', $scripturl, '?action=logout;sesc=', $context['session_id'], '"><i class="fa fa-sign-out-alt"></i> ', $txt['logout'], '</a></li>';
 						}
 						else
 						{
@@ -283,7 +281,7 @@ function template_html_below()
 // Theme Copyright - Please DO NOT remove this unless you pay for it.
 function Morning_copyright()
 {
-	$Morning = 'Theme by <a href="https://smftricks.com" target="_blank" rel="noopener">SMF Tricks</a>';
+	$Morning = 'Theme by <a href="https://smftricks.com">SMF Tricks</a>';
 
 	return $Morning;
 }
@@ -445,6 +443,5 @@ function template_button_strip($button_strip, $direction = 'top', $strip_options
 			</ul>
 		</div>';
 }
-
 
 ?>

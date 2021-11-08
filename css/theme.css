@@ -8,7 +8,7 @@
 .fa-mlist:before, .fa-view_all_members:before{content:"\f0c0"}
 .fa-mlist_search:before{content: "\f002";}
 .fa-logout:before{content:"\f08b"}
-.fa-register:before{content:"\f040"}
+.fa-register:before{content:"\f303"}
 .fa-login:before{content:"\f007"}
 .fa-add_poll:before{content:"\f0ae"}
 .fa-new_poll:before{content:"\f0ae"}
@@ -33,7 +33,7 @@
 .fa-calendar_post_event:before {content: "\f067";}
 
 /* Morning CSS File */
- @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap');
 body
 {
 	background: #f0f2f6;

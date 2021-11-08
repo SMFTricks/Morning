@@ -428,7 +428,7 @@ code.bbc_code
 }
 .catbg, .catbg2, tr.catbg td, tr.catbg2 td, tr.catbg th, tr.catbg2 th
 {
-	color: #fff;
+	color: #e9b462;
 	font-size: 1.1em;
 	font-weight: bold;
 }
@@ -1445,7 +1445,6 @@ table.table_list p
 table.table_list td, table.table_list th 
 {
     color: #757575;
-    font-weight: lighter;
     padding: 5px;
 }
 table.table_list tbody.header td
